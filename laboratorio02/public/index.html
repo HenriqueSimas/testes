@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>laboratorio 2</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body class="container">
+        <header class="">
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid justify-content-center">
+                    <h1 class="navbar-brand mb-0 h1">Estatisticas turma</h1>
+                </div>
+            </nav>
+        </header>
+        <main class="container p-3">
+            <h2 class="d-flex">
+                Quantidade de alunos:
+                <p class="ms-2" id="qtd-alunos"></p>
+            </h2>
+            <div class="container m-3 p-3">
+                <div class="row p-3">
+                    <div class="col-6">
+                        <p>Nome</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Altura (cm)</p>
+                    </div>
+                    <div class="col-3">
+                        <p>Peso (kg)</p>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-6" id="col-nome"></div>
+                    <div class="col-3" id="col-alt"></div>
+                    <div class="col-3" id="col-peso"></div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-6">
+                        <p>MÉDIA</p>
+                    </div>
+                    <div class="col-3">
+                        <span id="media-alt"></span>
+                    </div>
+                    <div class="col-3">
+                        <span id="media-peso"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form row">
+                <div class="col-4">
+                    <label for="nome" class="form-label">Nome: </label>
+                    <input type="text" name="nome" id="nome" class="form-control" />
+                </div>
+                <div class="col-2">
+                    <label for="idade" class="form-label">Idade: </label>
+                    <input type="number" name="idade" id="idade" class="form-control" />
+                </div>
+                <div class="col-2">
+                    <label for="altura" class="form-label">Altura: </label>
+                    <input type="number" name="altura" id="altura" class="form-control" />
+                </div>
+                <div class="col-2">
+                    <label for="peso" class="form-label">Peso: </label>
+                    <input type="text" name="peso" id="peso" class="form-control" />
+                </div>
+                <div class="col-2">
+                    <button id="btn-add" class="btn btn-primary m-3">Adicionar aluno</button>
+                </div>
+            </div>
+        </main>
+        <script src="./js/model/Aluno.js"></script>
+        <script src="./js/model/Turma.js"></script>
+        <script src="./js/model/CampoAlunoDOM.js"></script>
+        <script src="./js/model/ColunaDadosDOM.js"></script>
+        <script src="./js/model/TabelaDOM.js"></script>
+        <script src="./js/model/TurmaDadosDOM.js"></script>
+        <script src="./js/index.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
